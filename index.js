@@ -17,12 +17,17 @@ amr.on("close",function(){
         input: amr.stdout,
       });
 })
+amr.stderr.on("data",function(d){
+    console.log(d.toString())
+    console.log("error,killing")
+    //amr.kill();
+})
 r.on('line', (input) => {
     //console.log(input);
     if(input.charAt(0)=="{")
     {   
         console.log(JSON.parse(input))
-        request(endpoint+"?json="+encodeURIComponent(input))
+        request(endpoint+"?name=haverhill&owner=dgramop&id=1&town=herndon&state=va&country=us&json="+encodeURIComponent(input))
     }
-    else console.log(input.charAt(0))
+    else console.log(""+input)
 })
