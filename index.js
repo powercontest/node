@@ -5,7 +5,7 @@ const { spawn }=require("child_process")
 //rtlamr -format=json| node index.js  
 //could just spawn
 
-let endpoint="http://localhost:9090/submitAmrJSON";
+let endpoint="http://35.245.130.207/submitAmrJSON";
 
 var amr=spawn("/Users/dgramop/go/bin/rtlamr",["-format=json"])
 var r=readline.createInterface({
