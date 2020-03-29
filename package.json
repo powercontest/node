@@ -1,0 +1,25 @@
+{
+  "name": "powercontestnode",
+  "version": "1.0.0",
+  "description": "Code that runs (on?) the radios on the edge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/powercontest/node.git"
+  },
+  "keywords": [
+    "power",
+    "contest",
+    "powercontest",
+    "rtltcp"
+  ],
+  "author": "Dhruv Gramopadhye with the PowerContest team for Hoohacks 2020",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/powercontest/node/issues"
+  },
+  "homepage": "https://github.com/powercontest/node#readme"
+}
