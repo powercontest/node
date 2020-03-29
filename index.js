@@ -27,7 +27,9 @@ r.on('line', (input) => {
     if(input.charAt(0)=="{")
     {   
         console.log(JSON.parse(input))
-        request(endpoint+"?name=haverhill&owner=dgramop&id=1&town=herndon&state=va&country=us&json="+encodeURIComponent(input))
+        request(endpoint+"?name=haverhill&owner=dgramop&id=1&town=herndon&state=va&country=us&json="+encodeURIComponent(input),function(e,res,body){
+            console.log(body)
+        })
     }
     else console.log(""+input)
 })
